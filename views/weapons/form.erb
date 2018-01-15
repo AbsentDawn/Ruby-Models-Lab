@@ -1,39 +1,47 @@
 <form action="/<%= @weapon.id %>" method="POST">
-	<div>
-		<label>Name</label>
-		<input type="text" name="name"
-		placeholder="Enter a value" value="<%= @weapon.name %>">
+	<div class="row row-margin">
+		<div class="col-lg-9 col-md-6 col-sm-12">
+
+			<div>
+				<label>Name</label>
+				<input type="text" name="name"
+				placeholder="Enter a value" value="<%= @weapon.name %>">
+			</div>
+
+			<div>
+				<label>Attack</label>
+				<input type="text" name="attack"
+				placeholder="Enter a value" value="<%= @weapon.attack %>">
+			</div>
+
+			<div>
+				<label>Speed</label>
+				<input type="text" name="speed"
+				placeholder="Enter a value" value="<%= @weapon.speed %>">
+			</div>
+
+			<div>
+				<label>Owner</label>
+				<input type="text" name="owner"
+				placeholder="Enter a value" value="<%= @weapon.owner %>">
+			</div>
+
+			<div>
+				<label>Game Appearance</label>
+				<input type="text" name="game"
+				placeholder="Enter a value" value="<%= @weapon.game %>">
+			</div>
+
+			<div>
+				<input type="submit" value="Save Weapon">
+			</div>
+
+
+			<% if(@weapon.id) %>
+				<input type="hidden" name="_method" value="PUT">
+			<% end %>
+		</div>
 	</div>
 
-	<div>
-		<label>Attack</label>
-		<input type="text" name="attack"
-		placeholder="Enter a value" value="<%= @weapon.attack %>">
-	</div>
-
-	<div>
-		<label>Speed</label>
-		<input type="text" name="speed"
-		placeholder="Enter a value" value="<%= @weapon.speed %>">
-	</div>
-
-	<div>
-		<label>Owner</label>
-		<input type="text" name="owner"
-		placeholder="Enter a value" value="<%= @weapon.owner %>">
-	</div>
-
-	<div>
-		<label>Game Appearance</label>
-		<input type="text" name="game"
-		placeholder="Enter a value" value="<%= @weapon.game %>">
-	</div>
-
-	<div>
-		<input type="submit" value="Save Weapon">
-	</div>
-
-	<% if(@weapon.id) %>
-	<input type="hidden" name="_method" value="PUT">
-	<% end %>
+	
 </form>
