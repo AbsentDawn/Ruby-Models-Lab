@@ -1,0 +1,7 @@
+<h1>Welcome to Square Enix Weapons Gallery</h1>
+
+<% @weapons.each do |weapon| %>
+	<div>
+		<h3><a href="/<%= weapon.id %>"><%= weapon.name %></a></h3>
+	</div>
+<% end %>

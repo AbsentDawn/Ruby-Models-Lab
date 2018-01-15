@@ -1,0 +1,19 @@
+:root {
+	--back-color: blue;
+}
+
+
+* {
+	font-family: sans-serif;
+}
+
+html {
+	background-color: var(--back-color);
+	background: url('../images/ff.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+body {
+
+}

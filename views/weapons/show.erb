@@ -1,0 +1,12 @@
+<h1><%= @weapon.name %></h1>
+<p>Attack: <%= @weapon.attack%></p>
+<p>Speed: <%= @weapon.speed%></p>
+<p>Owner: <%= @weapon.owner%></p>
+<p>Game Appearance: <%= @weapon.game%></p>
+
+<a href="/<%= @weapon.id %>/edit">Edit Weapon</a>
+
+<form action="/<%= @weapon.id %>" method="POST">
+	<input type="hidden" name="_method" value="DELETE">
+	<input type="submit" value="Delete">
+</form>
