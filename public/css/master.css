@@ -8,15 +8,10 @@
 }
 
 html {
-	background: url('../images/ff.png');
-	background-size: cover;
-	/*background-repeat: no-repeat;
-	z-index: 1;*/
-
-	position: absolute;
-    top: 0;
-    width: 100%;
-    background-color: white;
+	background: url('../images/ff1.png');
+	background-size: 100%, 50px;
+	background-repeat: no-repeat;
+	background-color: blue;
 
 }
 
